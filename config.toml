@@ -1,4 +1,4 @@
-baseURL = 'http://ellis-jones.org/'
+baseURL = 'https://ellis-jones.org/'
 languageCode = 'en-gb'
 title = 'jonnu'
 theme = 'ananke'
