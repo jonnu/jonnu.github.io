@@ -1,4 +1,13 @@
-baseURL = 'https://ellis-jones.org/'
-languageCode = 'en-gb'
-title = 'jonnu'
-theme = 'ananke'
+baseURL = "https://ellis-jones.org/"
+languageCode = "en-GB"
+title = "jonnu"
+theme = "cactus"
+
+[params]
+  description = "Hello"
+  tagsOverview = false
+
+[[params.social]]
+  name = "github"
+  link = "https://github.com/jonnu"
+
