@@ -46,6 +46,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Output module
+        run: hugo mod graph
       - name: Fetch module
         run: hugo mod get
       - name: Write composite package.json
