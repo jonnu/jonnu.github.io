@@ -1,0 +1,26 @@
+{
+  "comments": {
+    "dependencies": {
+      "simple-icons": "github.com/schnerring/hugo-mod-json-resume"
+    },
+    "devDependencies": {
+      "husky": "github.com/schnerring/hugo-mod-json-resume",
+      "lint-staged": "github.com/schnerring/hugo-mod-json-resume",
+      "markdownlint-cli": "github.com/schnerring/hugo-mod-json-resume",
+      "prettier": "github.com/schnerring/hugo-mod-json-resume",
+      "prettier-plugin-go-template": "github.com/schnerring/hugo-mod-json-resume"
+    }
+  },
+  "dependencies": {
+    "simple-icons": "^15.18.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "markdownlint-cli": "^0.45.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-go-template": "^0.0.15"
+  },
+  "name": "jonnu.github.io",
+  "version": "0.1.0"
+}
