@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-draft: true
+draft: false
 layout: single
 ---
 
