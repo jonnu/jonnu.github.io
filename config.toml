@@ -1,13 +1,41 @@
 baseURL = "https://ellis-jones.org/"
 languageCode = "en-GB"
 title = "jonnu"
-theme = "cactus"
+theme = "poison"
+pluralizelisttitles = false
+
+assetDir = "assets"
 
 [params]
-  description = "Hello"
+  brand = "ellis-jones"
+  brand_image = "/images/profile.jpg"
+  description = "this is the description, software engineer Ellis-Jones"
+  dark_mode = true
   tagsOverview = false
 
-[[params.social]]
-  name = "github"
-  link = "https://github.com/jonnu"
+  # social
+  github_url = "https://github.com/jonnu"
+  linkedin_url = "https://www.linkedin.com/in/jonellisjones"
 
+  # rss
+  rss_icon = true
+  rss_section = "posts"
+
+  menu = [
+    { Name = "About", URL = "/about/", HasChildren = false },
+    { Name = "Resume", URL = "/resume", HasChildren = false },
+    { Name = "Posts", URL = "/posts", Pre = "Recent", HasChildren = true, Limit = 5 },
+  ]
+
+[module]
+  [[module.imports]]
+    path = "github.com/schnerring/hugo-mod-json-resume"
+  [[module.mounts]]
+    source = "node_modules/simple-icons/icons"
+    target = "assets/simple-icons"
+[[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+[[module.mounts]]
+    source = 'static'
+    target = 'static'

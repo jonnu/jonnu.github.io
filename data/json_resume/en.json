@@ -1,0 +1,125 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Jon Ellis-Jones",
+    "label": "Software Engineer",
+    "image": "https://ellis-jones.org/images/profile.jpg",
+    "email": "jon@ellis-jones.org",
+    "phone": "+447792427461",
+    "url": "https://ellis-jones.org",
+    "summary": "Jon hails from the Midlands. He has a degree in Computer Science from the University of Leicester. He has over 20 years of industry experience building, designing and shipping software to millions of customers.",
+    "location": {
+      "address": "14 Mile End Pl.",
+      "postalCode": "E1 4BH",
+      "city": "London",
+      "countryCode": "GB"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "jonnu",
+        "url": "https://github.com/jonnu"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Amazon",
+      "url": "https://amazon.co.uk/Rufus",
+      "location": "London, UK",
+      "description": "Rufus",
+      "position": "Senior Software Engineer",
+      "startDate": "2016-11-01",
+      "summary": "",
+      "highlights": [
+        "Building new Rufus agentic capabilities",
+        "Inlined Rufus capabilities into Amazon's high-traffic web pages",
+        "Alexa PQA/CPQA"
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "location": "London, UK",
+      "description": "Skype",
+      "position": "Software Development Engineer",
+      "url": "http://microsoft.com",
+      "startDate": "2012-04-01",
+      "endDate": "2016-11-01",
+      "summary": "",
+      "highlights": [
+        "Skype"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CoderDojo (Whitechapel E1)",
+      "position": "Volunteer",
+      "url": "http://www.coderdojo.com",
+      "startDate": "2016-10-31",
+      "endDate": "2016-10-31",
+      "summary": "CoderDojo is a global movement of free, volunteer-led, community based programming clubs for young people. At a Dojo, young people, between 7 and 17, learn how to code, develop websites, apps, programs, games and explore technology in an informal and creative environment. In addition to learning to code attendees meet likeminded people and are exposed to the possibilities of technology.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Leicester",
+      "url": "https://www.cs.le.ac.uk/",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science (Hons)",
+      "startDate": "2002",
+      "endDate": "2006",
+      "score": "2.1",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Zend Certified Engineer (ZCE)",
+      "date": "2009-09",
+      "awarder": "Perforce Zend",
+      "summary": "Credential ID ZEND010170"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Adept",
+      "keywords": [
+        "Java",
+        "Scala",
+        "Kotlin",
+        "TypeScript",
+        "Python",
+        "PHP",
+        "C#"
+      ]
+    },
+    {
+      "name": "Amazon Web Services",
+      "level": "Adept",
+      "keywords": [
+        "CloudFormation",
+        "DynamoDB",
+        "Lambda",
+        "ECS"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
