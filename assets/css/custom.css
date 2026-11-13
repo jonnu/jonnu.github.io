@@ -17,3 +17,7 @@
         display: none;
     }
 }
+/* Sidebar tagline: one step smaller than the theme's 1.25rem. */
+.sidebar .lead {
+    font-size: 1.125rem;
+}

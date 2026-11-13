@@ -1,4 +1,8 @@
+.idea
 .hugo_build.lock
 node_modules/
 public/
 resources/
+*.iml
+
+.DS_Store

@@ -9,7 +9,7 @@ assetDir = "assets"
 [params]
   brand = "ellis-jones"
   brand_image = "/images/profile.jpg"
-  description = "this is the description, software engineer Ellis-Jones"
+  description = "british software engineer building for the post-AI world. opinions expressed here are my own."
   dark_mode = true
   tagsOverview = false
 
