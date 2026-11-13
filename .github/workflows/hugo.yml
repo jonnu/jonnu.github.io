@@ -48,12 +48,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Output module
         run: hugo mod graph
-      - name: Fetch module
-        run: hugo mod get
       - name: Write composite package.json
         run: hugo mod npm pack
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: "if [[ -f package-lock.json || -f npm-shrinkwrap.json ]]; then npm ci; fi"
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
