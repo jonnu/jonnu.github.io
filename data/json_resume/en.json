@@ -6,10 +6,10 @@
     "image": "https://ellis-jones.org/images/profile.jpg",
     "email": "jon@ellis-jones.org",
     "url": "https://ellis-jones.org",
-    "summary": "Software engineer with over two decades of experience building, shipping and scaling software used by millions of customers. For the past decade at Amazon, Jon has been the technical lead for conversational and generative AI experiences, first for Alexa and now for Alexa for Shopping (formerly Rufus), Amazon's generative AI shopping assistant. He works where science meets engineering, turning ambiguous product ideas into low-latency, cost-efficient production systems through designs that span organisations, and raising the technical bar of the teams around him. He holds a BSc in Computer Science from the University of Leicester and is a member of the British Computer Society.",
+    "summary": "Software engineer with two decades of experience building, shipping and scaling products used by millions of customers. Technical lead at Amazon for the past decade on conversational and generative AI, first for Alexa and now for Alexa for Shopping. Turn ambiguous product ideas into low-latency, cost-efficient production systems through designs that span organisations, and raise the engineering bar of the teams around me. BSc in Computer Science from the University of Leicester; member of the British Computer Society.",
     "location": {
       "city": "London",
-      "countryCode": "GB"
+      "countryCode": "UK"
     },
     "profiles": [
       {
@@ -30,16 +30,16 @@
       "url": "https://www.amazon.com",
       "location": "London, UK",
       "description": "",
-      "position": "Software Development Engineer",
+      "position": "SDE III",
       "startDate": "2016-11-01",
       "summary": "Technical lead on Agentic AI for [Alexa for Shopping](https://www.aboutamazon.com/news/retail/alexa-for-shopping-ai-assistant) (formerly Rufus), Amazon's generative AI shopping assistant, used by [more than 400 million customers](https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop) in the last 12 months, with customer use of its agentic features growing more than eightfold since the start of 2026. Previously led natural language understanding and contextual product Q&A work for Alexa, Amazon's voice assistant.",
       "highlights": [
         "Led the technical design and delivery of Scheduled Actions in Alexa for Shopping, which lets customers hand recurring and event-driven shopping tasks to the assistant: price drops, new releases, back-in-stock alerts and customer-defined schedules. Built with Kotlin, Amazon ECS and Amazon Bedrock.",
-        "Brought Alexa for Shopping's generative AI responses into Amazon's highest-traffic retail pages, designing a hybrid architecture that combines HTTP/2 gRPC token streaming with the existing request/response rendering stack, serving tens of thousands of requests per second.",
+        "Launched Alexa for Shopping's generative AI responses on Amazon's highest-traffic retail pages, designing a hybrid architecture that combines HTTP/2 gRPC token streaming with the existing request/response rendering stack, serving tens of thousands of requests per second.",
         "Set the technical direction for contextual product Q&A on Alexa, solving cross-domain intent classification and entity resolution, including resolving products mentioned earlier in, or implied by, a conversation.",
-        "Reengineered and scaled the offline ranking pipelines behind Suggested Q&A (\"Customers also ask Alexa\") on Amazon Search, using multi-armed bandits to optimise question selection from customer engagement. Built with Elasticsearch, AWS Step Functions, AWS Glue and Apache Spark.",
+        "Re-engineered and scaled the offline ranking pipelines behind Suggested Q&A (\"Customers also ask Alexa\") on Amazon Search, using multi-armed bandits to optimise question selection from customer engagement. Built with Elasticsearch, AWS Step Functions, AWS Glue and Apache Spark.",
         "Designed tiered intent-classification workflows for Alexa that combine pattern matching with machine-learned models, achieving sub-40 ms p99 latency at low cost. Built with Java, Python, Amazon SageMaker and AWS Inferentia.",
-        "Grow engineers across the organisation: mentor engineers, give feedback on promotion documents, run design reviews, interview engineers and managers, and represent the team at internal and external hiring events."
+        "Mentored engineers across the organisation, gave feedback on promotion documents, ran design reviews, interviewed engineers and managers, and represented the team at internal and external hiring events."
       ]
     },
     {
@@ -47,15 +47,15 @@
       "location": "London, UK & Tallinn, Estonia",
       "description": "",
       "position": "Software Development Engineer",
-      "url": "http://microsoft.com",
+      "url": "https://www.microsoft.com",
       "startDate": "2012-04-01",
       "endDate": "2016-11-01",
       "summary": "Worked across Skype's commerce teams, bringing structure and definition to thousands of calling and subscription products, enabling payments in geographies around the world, and driving technical innovation and improvement in London, Tallinn and Prague.",
       "highlights": [
-        "Integrated third-party payment service providers, including PayPal, GlobalCollect, Yandex.Money and PayByCard, into the Skype ecosystem through a unified adapter middleware, managing customer payments, refunds, entitlements & reconciliation.",
-        "Defined Skype's product model and its RESTful APIs for products, subscriptions, rates, promotions, offers and bundles, backed by versioned, transactional database reads and writes. Built with PHP, PostgreSQL (PL/pgSQL), Maven and Chef.",
-        "Built Skype's Calling Rates experience, a low-latency single-page application written in ECMAScript and PHPTAL with proprietary two-way data binding, guiding customers worldwide through selecting from thousands of calling products and subscriptions.",
-        "Scaled the redemption service for Skype's Xbox One launch offer (six months of free group video calls and world calling minutes for Xbox Live Gold members in 13 launch territories), absorbing the holiday-season surge of gamers unboxing new consoles. Built with C#, ASP.NET Web API, Microsoft Azure and DocumentDB."
+        "Integrated third-party payment service providers, including PayPal, GlobalCollect, Yandex.Money and PayByCard, into the Skype ecosystem through a unified adapter middleware, managing customer payments, refunds, entitlements and reconciliation.",
+        "Defined the commerce product model and its RESTful APIs for products, subscriptions, rates, promotions, offers and bundles, backed by versioned, transactional database reads and writes. Built with PHP, PostgreSQL (PL/pgSQL), Maven and Chef.",
+        "Shipped Skype's Calling Rates experience, a low-latency single-page application written in JavaScript (ECMAScript) and PHPTAL with proprietary two-way data binding, helping customers worldwide choose the right calling product or subscription.",
+        "Scaled the redemption service for Skype's Xbox One launch offer (six months of free group video calls and world calling minutes for Xbox Live Gold members in 13 launch territories), absorbing the holiday-season surge of gamers unboxing new consoles. Built with C#, ASP.NET Web API, Microsoft Azure and DocumentDB (now Azure Cosmos DB)."
       ]
     },
     {
@@ -69,7 +69,7 @@
       "summary": "",
       "highlights": [
         "Led a team of developers at a design agency, modernising how the studio worked by introducing version control, code reuse through an HMVC framework, and structured project scheduling.",
-        "Built an internal project management tool for tracking tasks and time that automated routine paperwork."
+        "Developed an internal project management tool for tracking tasks and time that automated routine paperwork."
       ]
     },
     {
@@ -83,7 +83,7 @@
       "summary": "",
       "highlights": [
         "Co-wrote a modular car insurance quotation engine that produced over 1.1 million quotes a month at peak, served through an XML API to price comparison sites including Confused.com, GoCompare and MoneySupermarket.",
-        "Built the agency's fully featured, bespoke e-commerce platform: templatable and extensible, with SagePay payments, automated SEO for Google Shopping, and bulk product imports. Deployed for several high-value retail clients."
+        "Engineered the agency's fully featured, bespoke e-commerce platform: templatable and extensible, with SagePay payments, automated SEO for Google Shopping, and bulk product imports. Deployed for several high-value retail clients."
       ]
     }
   ],
@@ -91,10 +91,10 @@
     {
       "organization": "CoderDojo (Whitechapel E1)",
       "position": "Volunteer",
-      "url": "http://www.coderdojo.com",
+      "url": "https://coderdojo.com",
       "startDate": "2016-10",
       "endDate": "2016-10",
-      "summary": "CoderDojo is a global movement of free, volunteer-led, community based programming clubs for young people. At a Dojo, young people, between 7 and 17, learn how to code, develop websites, apps, programs, games and explore technology in an informal and creative environment. In addition to learning to code attendees meet likeminded people and are exposed to the possibilities of technology.",
+      "summary": "CoderDojo is a global movement of free, volunteer-led, community-based programming clubs for young people. At a Dojo, young people aged 7 to 17 learn to code, build websites, apps, programs and games, and explore technology in an informal, creative environment. In addition to learning to code, attendees meet like-minded people and are exposed to the possibilities of technology.",
       "highlights": []
     }
   ],
@@ -108,7 +108,7 @@
       "endDate": "2006",
       "score": "2.1",
       "courses": [
-        "Dissertation: Social Networking and Degrees of Separation - The Mathematics of Social Networks (First)"
+        "Dissertation: Social Networking and Degrees of Separation – The Mathematics of Social Networks (First)"
       ]
     }
   ],
@@ -132,14 +132,18 @@
         "JavaScript",
         "Python",
         "PHP",
-        "C#"
+        "C#",
+        "SQL"
       ]
     },
     {
       "name": "AI & Machine Learning",
       "keywords": [
         "Agentic AI",
-        "LLM systems",
+        "Retrieval-augmented generation (RAG)",
+        "Agentic tool use",
+        "Multi-agent orchestration",
+        "Context optimisation",
         "Natural language understanding",
         "IC/NER/ER",
         "Multi-armed bandits",
@@ -157,13 +161,15 @@
         "Amazon DynamoDB",
         "AWS CloudFormation",
         "gRPC",
-        "HTTP/2"
+        "HTTP/2",
+        "RESTful APIs"
       ]
     },
     {
       "name": "Data",
       "keywords": [
         "Elasticsearch",
+        "PostgreSQL",
         "Apache Spark",
         "AWS Glue",
         "Amazon Redshift"
