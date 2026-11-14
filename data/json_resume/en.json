@@ -2,52 +2,88 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Jon Ellis-Jones",
-    "label": "Software Engineer",
+    "label": "Software Development Engineer · Conversational AI & Distributed Systems",
     "image": "https://ellis-jones.org/images/profile.jpg",
     "email": "jon@ellis-jones.org",
-    "phone": "+447792427461",
     "url": "https://ellis-jones.org",
-    "summary": "Jon hails from the Midlands. He has a degree in Computer Science from the University of Leicester. He has over 20 years of industry experience building, designing and shipping software to millions of customers.",
+    "summary": "Software engineer with over two decades of experience building, shipping and scaling software used by millions of customers. For the past decade at Amazon, Jon has been the technical lead for conversational and generative AI experiences, first for Alexa and now for Alexa for Shopping (formerly Rufus), Amazon's generative AI shopping assistant. He works where science meets engineering, turning ambiguous product ideas into low-latency, cost-efficient production systems through designs that span organisations, and raising the technical bar of the teams around him. He holds a BSc in Computer Science from the University of Leicester and is a member of the British Computer Society.",
     "location": {
-      "address": "14 Mile End Pl.",
-      "postalCode": "E1 4BH",
       "city": "London",
       "countryCode": "GB"
     },
     "profiles": [
       {
-        "network": "Github",
+        "network": "GitHub",
         "username": "jonnu",
         "url": "https://github.com/jonnu"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jonellisjones",
+        "url": "https://www.linkedin.com/in/jonellisjones/"
       }
     ]
   },
   "work": [
     {
       "name": "Amazon",
-      "url": "https://amazon.co.uk/Rufus",
+      "url": "https://www.amazon.com",
       "location": "London, UK",
-      "description": "Rufus",
-      "position": "Senior Software Engineer",
+      "description": "",
+      "position": "Software Development Engineer",
       "startDate": "2016-11-01",
-      "summary": "",
+      "summary": "Technical lead on Agentic AI for [Alexa for Shopping](https://www.aboutamazon.com/news/retail/alexa-for-shopping-ai-assistant) (formerly Rufus), Amazon's generative AI shopping assistant, used by [more than 400 million customers](https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop) in the last 12 months, with customer use of its agentic features growing more than eightfold since the start of 2026. Previously led natural language understanding and contextual product Q&A work for Alexa, Amazon's voice assistant.",
       "highlights": [
-        "Building new Rufus agentic capabilities",
-        "Inlined Rufus capabilities into Amazon's high-traffic web pages",
-        "Alexa PQA/CPQA"
+        "Led the technical design and delivery of Scheduled Actions in Alexa for Shopping, which lets customers hand recurring and event-driven shopping tasks to the assistant: price drops, new releases, back-in-stock alerts and customer-defined schedules. Built with Kotlin, Amazon ECS and Amazon Bedrock.",
+        "Brought Alexa for Shopping's generative AI responses into Amazon's highest-traffic retail pages, designing a hybrid architecture that combines HTTP/2 gRPC token streaming with the existing request/response rendering stack, serving tens of thousands of requests per second.",
+        "Set the technical direction for contextual product Q&A on Alexa, solving cross-domain intent classification and entity resolution, including resolving products mentioned earlier in, or implied by, a conversation.",
+        "Reengineered and scaled the offline ranking pipelines behind Suggested Q&A (\"Customers also ask Alexa\") on Amazon Search, using multi-armed bandits to optimise question selection from customer engagement. Built with Elasticsearch, AWS Step Functions, AWS Glue and Apache Spark.",
+        "Designed tiered intent-classification workflows for Alexa that combine pattern matching with machine-learned models, achieving sub-40 ms p99 latency at low cost. Built with Java, Python, Amazon SageMaker and AWS Inferentia.",
+        "Grow engineers across the organisation: mentor engineers, give feedback on promotion documents, run design reviews, interview engineers and managers, and represent the team at internal and external hiring events."
       ]
     },
     {
       "name": "Microsoft",
-      "location": "London, UK",
-      "description": "Skype",
+      "location": "London, UK & Tallinn, Estonia",
+      "description": "",
       "position": "Software Development Engineer",
       "url": "http://microsoft.com",
       "startDate": "2012-04-01",
       "endDate": "2016-11-01",
+      "summary": "Worked across Skype's commerce teams, bringing structure and definition to thousands of calling and subscription products, enabling payments in geographies around the world, and driving technical innovation and improvement in London, Tallinn and Prague.",
+      "highlights": [
+        "Integrated third-party payment service providers, including PayPal, GlobalCollect, Yandex.Money and PayByCard, into the Skype ecosystem through a unified adapter middleware, managing customer payments, refunds, entitlements & reconciliation.",
+        "Defined Skype's product model and its RESTful APIs for products, subscriptions, rates, promotions, offers and bundles, backed by versioned, transactional database reads and writes. Built with PHP, PostgreSQL (PL/pgSQL), Maven and Chef.",
+        "Built Skype's Calling Rates experience, a low-latency single-page application written in ECMAScript and PHPTAL with proprietary two-way data binding, guiding customers worldwide through selecting from thousands of calling products and subscriptions.",
+        "Scaled the redemption service for Skype's Xbox One launch offer (six months of free group video calls and world calling minutes for Xbox Live Gold members in 13 launch territories), absorbing the holiday-season surge of gamers unboxing new consoles. Built with C#, ASP.NET Web API, Microsoft Azure and DocumentDB."
+      ]
+    },
+    {
+      "name": "Creative Insight",
+      "url": "https://creativeinsight.co.uk",
+      "location": "Birmingham, UK",
+      "description": "",
+      "position": "Senior Software Developer",
+      "startDate": "2010-03",
+      "endDate": "2012-04",
       "summary": "",
       "highlights": [
-        "Skype"
+        "Led a team of developers at a design agency, modernising how the studio worked by introducing version control, code reuse through an HMVC framework, and structured project scheduling.",
+        "Built an internal project management tool for tracking tasks and time that automated routine paperwork."
+      ]
+    },
+    {
+      "name": "Kaweb",
+      "url": "https://www.kaweb.co.uk",
+      "location": "Birmingham, UK",
+      "description": "",
+      "position": "Web Developer",
+      "startDate": "2006-11",
+      "endDate": "2010-03",
+      "summary": "",
+      "highlights": [
+        "Co-wrote a modular car insurance quotation engine that produced over 1.1 million quotes a month at peak, served through an XML API to price comparison sites including Confused.com, GoCompare and MoneySupermarket.",
+        "Built the agency's fully featured, bespoke e-commerce platform: templatable and extensible, with SagePay payments, automated SEO for Google Shopping, and bulk product imports. Deployed for several high-value retail clients."
       ]
     }
   ],
@@ -56,8 +92,8 @@
       "organization": "CoderDojo (Whitechapel E1)",
       "position": "Volunteer",
       "url": "http://www.coderdojo.com",
-      "startDate": "2016-10-31",
-      "endDate": "2016-10-31",
+      "startDate": "2016-10",
+      "endDate": "2016-10",
       "summary": "CoderDojo is a global movement of free, volunteer-led, community based programming clubs for young people. At a Dojo, young people, between 7 and 17, learn how to code, develop websites, apps, programs, games and explore technology in an informal and creative environment. In addition to learning to code attendees meet likeminded people and are exposed to the possibilities of technology.",
       "highlights": []
     }
@@ -71,7 +107,9 @@
       "startDate": "2002",
       "endDate": "2006",
       "score": "2.1",
-      "courses": []
+      "courses": [
+        "Dissertation: Social Networking and Degrees of Separation - The Mathematics of Social Networks (First)"
+      ]
     }
   ],
   "awards": [
@@ -85,26 +123,50 @@
   "publications": [],
   "skills": [
     {
-      "name": "Programming Languages",
-      "level": "Adept",
+      "name": "Languages",
       "keywords": [
+        "Kotlin",
         "Java",
         "Scala",
-        "Kotlin",
         "TypeScript",
+        "JavaScript",
         "Python",
         "PHP",
         "C#"
       ]
     },
     {
-      "name": "Amazon Web Services",
-      "level": "Adept",
+      "name": "AI & Machine Learning",
       "keywords": [
-        "CloudFormation",
-        "DynamoDB",
-        "Lambda",
-        "ECS"
+        "Agentic AI",
+        "LLM systems",
+        "Natural language understanding",
+        "IC/NER/ER",
+        "Multi-armed bandits",
+        "Amazon Bedrock",
+        "Amazon SageMaker",
+        "AWS Inferentia"
+      ]
+    },
+    {
+      "name": "Distributed Systems & AWS",
+      "keywords": [
+        "Amazon ECS",
+        "AWS Lambda",
+        "AWS Step Functions",
+        "Amazon DynamoDB",
+        "AWS CloudFormation",
+        "gRPC",
+        "HTTP/2"
+      ]
+    },
+    {
+      "name": "Data",
+      "keywords": [
+        "Elasticsearch",
+        "Apache Spark",
+        "AWS Glue",
+        "Amazon Redshift"
       ]
     }
   ],

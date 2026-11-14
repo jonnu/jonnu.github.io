@@ -1,0 +1,18 @@
+{{- /* Override of the hugo-mod-json-resume partial: only show "(level)" when a level is set. */ -}}
+{{ $cv := index $.Site.Data.json_resume $.Site.Language.Lang }}
+{{ with $cv.skills }}
+  <div class="jr__list jr-skills__list">
+    <ul>
+      {{ range . }}
+        <li class="jr__item jr-skills__item">
+          <p><strong>{{ .name }}{{ with .level }} ({{ . }}){{ end }}</strong></p>
+          {{ with .keywords }}
+            <p>
+              {{ delimit . ", " }}
+            </p>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

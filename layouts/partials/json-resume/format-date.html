@@ -1,0 +1,8 @@
+{{- /* Formats JSON Resume dates as "January 2006". Year-only dates ("2002") are shown as-is; "2006-01" is treated as the 1st of the month. */ -}}
+{{- $d := . -}}
+{{- if eq (len $d) 4 -}}
+  {{- $d -}}
+{{- else -}}
+  {{- if eq (len $d) 7 }}{{ $d = printf "%s-01" $d }}{{ end -}}
+  {{- time.Format "January 2006" $d -}}
+{{- end -}}

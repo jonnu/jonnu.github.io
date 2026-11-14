@@ -1,0 +1,14 @@
+{{- /* Override of the hugo-mod-json-resume partial: show dates as "November 2016" instead of "2016-11-01", and a single date when start and end match. */ -}}
+<div class="jr__date-range">
+  <span>{{ partial "json-resume/format-date.html" .context.startDate }}</span>
+  {{- if ne .context.startDate .context.endDate }}
+  <span>-</span>
+  <span>
+    {{- with .context.endDate -}}
+      {{- partial "json-resume/format-date.html" . -}}
+    {{- else -}}
+      {{ .site.Params.jsonResume.present | default "present" }}
+    {{- end -}}
+  </span>
+  {{- end }}
+</div>

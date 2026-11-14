@@ -1,0 +1,48 @@
+{{- /* Override of the hugo-mod-json-resume partial: summary and highlights are rendered as Markdown so they can contain links. */ -}}
+{{ $cv := index $.Site.Data.json_resume $.Site.Language.Lang }}
+{{ with $cv.work }}
+  <div class="jr__list jr-work__list">
+    {{ range . }}
+      <div class="jr__item jr-work__item">
+        <div class="jr__item-meta">
+          <div class="jr-work__position">{{ .position }}</div>
+          {{ partial "json-resume/duration.html" (dict "context" . "site" $.Site) }}
+          {{ if or .name .location }}
+            <div class="jr-work__name">
+              {{ if .name }}
+                {{ if .url }}
+                  <a href="{{ .url }}">
+                    {{ .name }}
+                  </a>
+                {{ else }}
+                  <span>{{ .name }}</span>
+                {{ end }}
+              {{ end }}
+              {{ with .description }}
+                <span>—</span>
+                <span class="jr-work__description">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+
+          {{ with .location }}
+            <div class="jr-work__location">{{ . }}</div>
+          {{ end }}
+        </div>
+
+        <div class="jr__item-content">
+          {{ with .summary }}
+            <p class="jr-work__summary">{{ . | markdownify }}</p>
+          {{ end }}
+          {{ with .highlights }}
+            <ul class="jr-work__highlights">
+              {{ range . }}
+                <li>{{ . | markdownify }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

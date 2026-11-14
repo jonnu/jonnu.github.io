@@ -1,0 +1,16 @@
+{
+  "name": "resume-pdf",
+  "private": true,
+  "type": "module",
+  "description": "Builds the downloadable resume PDF from data/json_resume/en.json using the Colophon JSON Resume theme.",
+  "scripts": {
+    "build": "node build.mjs ../../data/json_resume/en.json ../../public/resume/resume.pdf"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "jsonresume-theme-colophon": "0.2.0",
+    "resumed": "6.1.0"
+  }
+}

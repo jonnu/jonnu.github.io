@@ -21,3 +21,15 @@
 .sidebar .lead {
     font-size: 1.125rem;
 }
+/* Skills: keep each category's label and keywords tight together. */
+.jr-skills__item p {
+    margin: 0;
+}
+.jr-skills__item + .jr-skills__item {
+    margin-top: 0.5rem;
+}
+/* Education: show courses (e.g. dissertation) as plain lines, not bullets. */
+.jr-education__courses {
+    list-style: none;
+    padding-left: 0;
+}
