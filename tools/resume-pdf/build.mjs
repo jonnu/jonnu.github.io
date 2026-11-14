@@ -5,7 +5,9 @@
 // 1. Copies the JSON Resume data, keeping only the sections shown on /resume/
 //    and turning Markdown links into plain text (the theme prints them raw).
 // 2. Renders it to HTML with the Colophon theme.
-// 3. Swaps the theme's fonts for Merriweather, loaded from Google Fonts.
+// 3. Swaps the theme's fonts for Merriweather, loaded from Google Fonts, and
+//    collapses date ranges whose start and end match, and renames the "Work"
+//    heading to "Experience".
 // 4. Prints the HTML to PDF with headless Chrome (set CHROME_PATH to override
 //    the browser; set CHROME_NO_SANDBOX=1 on CI runners that need it).
 
@@ -68,6 +70,10 @@ async function main() {
   let html = await render(resume, theme);
   if (!html.includes("</head>")) throw new Error("Theme output has no </head> to inject fonts into");
   html = html.replace("</head>", `${FONT_CSS}\n</head>`);
+  // Colophon always prints a range; show a single date when start and end match ("Oct 2016").
+  html = html.replace(/<span>([^<]+?) &ndash; \1<\/span>/g, "<span>$1</span>");
+  // "Experience" is what ATSs look for; Colophon labels the section "Work".
+  html = html.replace('<h2 id="work">Work</h2>', '<h2 id="work">Experience</h2>');
 
   const work = mkdtempSync(join(tmpdir(), "resume-pdf-"));
   try {
