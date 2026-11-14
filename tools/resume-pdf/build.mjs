@@ -43,7 +43,12 @@ function prepare(resume) {
 const FONT_CSS = `<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=block">
-<style>:root { --font-serif: "Merriweather", Georgia, serif; --font-body: "Merriweather", Georgia, serif; }</style>`;
+<style>
+:root { --font-serif: "Merriweather", Georgia, serif; --font-body: "Merriweather", Georgia, serif; }
+/* Keep the PDF to two pages: slightly smaller print type and margins than the theme's 10pt / 10mm 12mm 11mm. */
+@page { margin: 9mm 11mm 10mm; }
+@media print { html { font-size: 9.5pt; } }
+</style>`;
 
 function findChrome() {
   const candidates = [
