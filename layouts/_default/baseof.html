@@ -1,0 +1,15 @@
+{{ partial "head/head.html" . }}
+    <body class="{{if .Site.Params.layoutReverse}}layout-reverse {{end}}{{if .Site.Params.dark_mode}}dark-theme{{end}}">
+        <canvas id="starfield" aria-hidden="true"></canvas>
+        <div class="wrapper">
+            {{ partial "sidebar/sidebar.html" . }}
+            <main class="content container">
+                {{ block "main" . -}}{{- end }}
+            </main>
+            {{ block "sidebar" . }}{{ end }}
+        </div>
+        {{ with resources.Get "js/starfield.js" | minify | fingerprint }}
+        <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+        {{ end }}
+    </body>
+</html>
